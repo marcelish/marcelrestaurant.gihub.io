@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="Style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+
+</head>
+
+<body>
+
+    <header class="header">
+        <nav class="navbar">
+            <a href="index.html" class="active">Home</a>
+            <a href="menu/menu.html">Menu</a>
+            <a href="events/event.html">Private Events</a>
+            <a href="catering/catering.html">Catering</a>
+            <a href="#">Reserve</a>
+        </nav>
+    </header>
+
+    <img src="logo.png" alt="logo" class="logo">
+    <h1>Foodi</h1>
+
+    <section class="quote">
+        <div class="breaker_quote">
+            <p>“A picture is worth more than 1000 words.”</p>
+            <p>— Marcel Salazar</p>
+        </div>
+    </section>
+
+    <section class="image-slider">
+        <div class="container">
+            <!-- Slider main container -->
+            <div class="swiper">
+                <!-- Additional required wrapper -->
+                <div class="swiper-wrapper">
+                    <!-- Slides -->
+                    <div class="swiper-slide"><img src="5.jpg" alt=""></div>
+                    <div class="swiper-slide"><img src="3.jpg" alt=""></div>
+                    <div class="swiper-slide"><img src="4.jpg" alt=""></div>
+                </div>
+                <!-- If we need pagination -->
+                <div class="swiper-pagination"></div>
+
+                <!-- If we need navigation buttons -->
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+            </div>
+        </div>
+
+
+        <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+        <script>
+            const swiper = new Swiper('.swiper', {
+
+                loop: true,
+                autoplay: {
+                    delay: 4500,
+                    disableOnInteraction: false,
+                },
+                speed: 1200,
+                pagination: {
+                    el: '.swiper-pagination',
+                    clickable: true,
+                },
+
+
+                navigation: {
+                    nextEl: '.swiper-button-next',
+                    prevEl: '.swiper-button-prev',
+                },
+            });
+        </script>
+    </section>
+
+    <section class="quote2">
+        <div class="breaker_quote">
+            <p>“Keeps us alive. Keeps us happy. Brightens my day. This is what food is to me.”</p>
+            <p>— Anthony barreto</p>
+            <p>Visit our Unique</p>
+            <a href="menu.html">MENUS</a>
+        </div>
+    </section>
+
+    <section class = "banner">
+        <div class = "fbanner">
+        </div>
+    </section>
+
+    <section class="about">
+        <div class="aboutus">
+            <div class="about-text">
+                <h2>About Foodi</h2>
+                <p>Welcome to Foodi, a culinary haven nestled in the heart of the city. At Foodi, we take pride in curating
+                    a diverse menu that celebrates the rich tapestry of global cuisines.
+                    Our restaurant is a melting pot of flavors, offering a delightful array of dishes crafted with passion
+                    and precision.
+                    Whether you're a connoisseur of traditional classics or eager to explore new taste sensations, Foodi is
+                    your destination for a memorable dining experience.
+                    Join us as we embark on a gastronomic journey, bringing people together through the universal language
+                    of delicious food.
+                </p>
+                <image src="about.jpg" alt="chef"></image>
+                <h3>Award Winning Experience</h3>
+                <p>Foodi has been awarded the prestigious Michelin Star for 2021.
+                    This is a testament to our commitment to excellence and our dedication to providing our guests with an
+                    exceptional dining experience.
+                    We are honored to be recognized by the Michelin Guide and look forward to continuing to serve our guests
+                    with the highest quality food and service.
+                </p>
+                <image src="award.jpg" alt="award"></image>
+            </div>
+        </div>
+    </section>
+    
+    <section class = "footer">
+        <div class = "footer-text">
+            <h2>Foodi Designed By Marcel Salazar</h2>
+            <p>1234 Main Street</p>
+            <p>San Francisco, CA 94102</p>
+            <p>415-555-5555</p>
+            <p>
+        </div>
+    </section>
+</body>
+
+</html>
